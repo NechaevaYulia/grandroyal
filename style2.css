@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.top img{
+    width: 100px;
+}
+.top_box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.top_cell_1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(86, 86, 86);
+}
+.arrow_box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.arrow_box p{
+    color: whitesmoke;
+    text-align: center;
+    background-color: gray;
+    width: 50%;
+    vertical-align: center;
+    line-height: 2.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 14pt;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid gray;
+}
+.top_cell_2{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+}
+.menu{
+    height: 50px;
+    width: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 12pt;
+}
+.top a{
+    text-decoration: none;
+    color: black;
+}
+.photo{
+    width: 100%;
+    margin-bottom: -3px;
+}
+.box_1{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(245, 237, 226);
+    padding: 5% 10% 5% 10%;
+}
+.box_2{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 40px 100px 40px 100px;
+    box-shadow: 4px 7px 26px -16px rgba(34, 60, 80, 0.36);
+}
+.b2_top{
+    width: 100%;
+    height: fit-content;
+    padding-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.b2_top h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.b2_top h2{
+    color: rgb(210, 178, 1);
+}
+.b2_top p{
+    padding: 30px 200px 30px 0px;
+    font-size: 14pt;
+    letter-spacing: 0.15pt;
+    line-height: 20px;
+}
+.b2_bottom{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.b2_cell_2, .b2_cell_1{
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 50px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.b2_bottom img{
+    width: 50%;
+}
+.right_cell{
+    width: 50%;
+    height: fit-content;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right_cell h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+.right_cell div{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12pt;
+    border-radius: 4px;
+}
+.b2_cell_1{
+    background-color: rgb(245, 242, 233);
+}
+.b2_cell_1 h2{
+    color: rgb(138, 123, 86);
+    letter-spacing: 1px;
+}
+.button_1 {
+    background-color:  rgb(138, 123, 86);
+    color: rgb(245, 242, 233);
+    height: 30px;
+    padding-top: 5px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.b2_cell_2{
+    background-color: rgb(183, 162, 114);
+}
+.b2_cell_2 h2{
+    color: rgb(255, 252, 243);
+    letter-spacing: 1px;
+}
+.button_2{
+    background-color: rgb(245, 242, 233);
+    color: rgb(183, 162, 114);
+    height: 30px;
+    padding-top: 5px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    font-size: 14pt;
+    padding: 20px 50px 50px 50px;
+    letter-spacing: 0.5pt;
+}
+.email_block{
+    height: 27px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.input_block{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.email_input{
+    height: 27px;
+    width: 400px;
+}
+.button{
+    height: 27px;
+    width: 148px;
+    padding-top: 5px;
+    background-color: black;
+    text-align: center;
+    font-size: 9pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bottom img{
+    float: right;
+    width: 150px;
+    margin-top: -30px;
+}
+.booking_window{
+    width: 100%;
+    height: 50px;
+    padding: 0px 200px 0px 200px;
+    background-color: rgba(219, 193, 46, 0.67);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.zaezd, .viezd{
+    height: 50px;
+    width: 220px;
+}
+.zaezd_vvod, .viezd_vvod{
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.zaezd_vvod img, .viezd_vvod img{
+    height: 23px;
+}
+.text_block{
+    width: 220px;
+    height: 50px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+
+}
+.calendar{
+    display: none;
+    width: 220px;
+    padding: 10px;
+    font-size: 11pt;
+    height: fit-content;
+    background-color: rgba(210, 178, 1, 0.5);
+}
+.calendar b{
+    font-size: 13pt;
+}
+.day_name, .day{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+.day div:first-child {
+  grid-column: 4;
+}
+.day div:hover {
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+}
+.zaezd_vvod:hover .calendar, .viezd_vvod:hover .calendar{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+.gosti_input{
+    height: 50px;
+    width: 250px;
+    padding-top: 5px;
+    padding: auto;
+}
+.input_box{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+.vvod_gostey{
+    height: 30px;
+    width: 210px;
+    font-size: 10pt;
+    font-style: italic;
+    padding-left: 3px;
+}
+.booking_button{
+    margin: 10px 0px 10px 130px;
+    color: rgb(210, 178, 1);
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+    width: 250px;
+    font-size: 13pt;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}

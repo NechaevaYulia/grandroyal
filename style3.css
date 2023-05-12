@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.top img{
+    width: 100px;
+}
+.top_box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.top_cell_1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(86, 86, 86);
+}
+.arrow_box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.arrow_box p{
+    color: whitesmoke;
+    text-align: center;
+    background-color: gray;
+    width: 50%;
+    vertical-align: center;
+    line-height: 2.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-size: 14pt;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid gray;
+}
+.top_cell_2{
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+}
+.menu{
+    height: 50px;
+    width: 400px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.7px;
+    font-size: 12pt;
+}
+.top a{
+    text-decoration: none;
+    color: black;
+}
+.photo{
+    width: 100%;
+    margin-bottom: -3px;
+}
+.box{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(245, 237, 226);
+    padding: 5% 10% 5% 10%;
+}
+.inside_box{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 40px 100px 40px 100px;
+    box-shadow: 4px 7px 26px -16px rgba(34, 60, 80, 0.36);
+}
+.box_text{
+    width: 100%;
+    height: fit-content;
+    padding-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box_text h1, h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.box_text h2{
+    color: rgb(210, 178, 1);
+}
+.box_text p{
+    padding: 30px 200px 30px 0px;
+    font-size: 14pt;
+    letter-spacing: 0.15pt;
+    line-height: 20px;
+}
+.galereya{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.cell_1, .cell_2, .cell_3, .cell_4, .cell_5, .cell_6{
+    width: 90%;
+    min-height: 385px;
+    max-height: max-content;
+}
+.cell_1{
+    background-image: url(photo/ph11_1.jpg);
+    background-size: cover;
+}
+.cell_2{
+    background-image: url(photo/ph12_1.jpg);
+    background-size: cover;
+}
+.cell_3{
+    background-image: url(photo/ph13_1.jpg);
+    background-size: cover;
+}
+.cell_4{
+    background-image: url(photo/ph14_1.jpg);
+    background-size: cover;
+}
+.cell_5{
+    background-image: url(photo/ph15_1.jpg);
+    background-size: cover;
+}
+.cell_6{
+    background-image: url(photo/ph16_1.jpg);
+    background-size: cover;
+}
+.no{
+    width: 100%;
+    height: 65%;
+}
+.opisanie{
+    width: 100%;
+    min-height: 35%;
+    max-height: max-content;
+    padding: 10px;
+    background-color: rgba(225, 190, 140, 0.5);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.opisanie h3{
+    font-size: 20pt;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+.opisanie p{
+    font-size: 10pt;
+}
+.opisanie a{
+    width: 65%;
+    text-decoration: none;
+    color: white;
+    border: solid white;
+    border-width: 0.5px;
+    padding: 2px 50px 3px 50px;
+    margin-top: 5px;
+}
+.opisanie a:hover{
+    background-color:  rgba(245, 237, 226, 0.5);
+}
+
+#fon_1, #fon_2, #fon_3, #fon_4, #fon_5, #fon_6{
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#fon_1:target, #fon_2:target, #fon_3:target, #fon_4:target, #fon_5:target, #fon_6:target{
+    display: block;
+}
+#window_1, #window_2, #window_3, #window_4, #window_5, #window_6{
+    width: 800px;
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opisanie img{
+    width: 800px;
+}
+.close{
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(212, 210, 210);
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+.close:hover{
+    background-color: gray;
+}
+.button_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    font-size: 14pt;
+    padding: 20px 50px 50px 50px;
+    letter-spacing: 0.5pt;
+}
+.email_block{
+    height: 27px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.input_block{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.email_input{
+    height: 27px;
+    width: 400px;
+}
+.button{
+    height: 27px;
+    width: 148px;
+    padding-top: 5px;
+    background-color: black;
+    text-align: center;
+    font-size: 9pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bottom img{
+    float: right;
+    width: 150px;
+    margin-top: -30px;
+}
+.booking_window{
+    width: 100%;
+    height: 50px;
+    padding: 0px 200px 0px 200px;
+    background-color: rgba(219, 193, 46, 0.67);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.zaezd, .viezd{
+    height: 50px;
+    width: 220px;
+}
+.zaezd_vvod, .viezd_vvod{
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.zaezd_vvod img, .viezd_vvod img{
+    height: 23px;
+}
+.text_block{
+    width: 220px;
+    height: 50px;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+
+}
+.calendar{
+    display: none;
+    width: 220px;
+    padding: 10px;
+    font-size: 11pt;
+    height: fit-content;
+    background-color: rgba(210, 178, 1, 0.5);
+}
+.calendar b{
+    font-size: 13pt;
+}
+.day_name, .day{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+.day div:first-child {
+  grid-column: 4;
+}
+.day div:hover {
+  background-color: gray;
+  color: #fff;
+  cursor: pointer;
+}
+.zaezd_vvod:hover .calendar, .viezd_vvod:hover .calendar{
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+.gosti_input{
+    height: 50px;
+    width: 250px;
+    padding-top: 5px;
+    padding: auto;
+}
+.input_box{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+.vvod_gostey{
+    height: 30px;
+    width: 210px;
+    font-size: 10pt;
+    font-style: italic;
+    padding-left: 3px;
+}
+.booking_button{
+    margin: 10px 0px 10px 130px;
+    color: rgb(210, 178, 1);
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+    width: 250px;
+    font-size: 13pt;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
